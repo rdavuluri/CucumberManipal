@@ -1,11 +1,13 @@
 package pageObjects;
 
-import net.bytebuddy.asm.Advice.Return;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import com.rd.actions.Click;
 
 import utilities.Setup;
+
+import org.openqa.selenium.WebElement;
+
 
 public class CalculatorPage extends Setup{
 
@@ -17,18 +19,20 @@ public class CalculatorPage extends Setup{
   }
   /**
    * Opening url
-   * @throws Exception
    */
-  public void openUrl() throws Exception {
+  public void openUrl() {
 	  driver.get("https://www.calculator.net/");
   }
   
-  public String getCalculatorPageTitle() throws Exception {
+  public String getCalculatorPageTitle() {
 	  return driver.getTitle();
   }
   
   public void clickOnBMILink() throws Exception {
-	  getLinkBMI().click();
+	 
+//	  getLinkBMI().click();	  
+	  Click.clickElement(getLinkBMI(),true);
+//	  Click.clickElementByJS(getLinkBMI());
 	  Thread.sleep(2000);
   }
   

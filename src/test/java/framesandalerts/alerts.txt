@@ -1,0 +1,41 @@
+Alert Pop up :
+Characteristics features :
+● We can’t inspect this pop up./ we can't use locators
+● We can’t move this kind pop up.
+● This pop up will have white color background with black color font.
+● This pop up will have only one “OK” button
+
+How to handle Alert pop up
+In order to handle the alert pop up, we first have to switch to alert window using the below
+statement.
+driver.switchTo().alert();
+After transferring the control to alert window, we can use the following methods of
+“Alert” interface.
+getText() → to get the text present on the alert window.
+accept() / dismiss() → to click on OK button on the alert window.
+
+Confirmation Pop up :
+Characteristics features :
+● We can’t inspect this pop up.
+● We can’t move this kind pop up.
+● This pop up will have white color background with black color font.
+● This pop up will have two buttons :- “OK” button and “Cancel” button.
+
+How to handle Confirmation  pop up
+● In order to handle the alert pop up, we first have to switch to alert window using the below
+statement.
+driver.switchTo().alert();
+● After transferring the control to alert window, we can use the following methods of “Alert”
+interface.
+getText() → to get the text present on the alert window.
+sendKeys() → to enter a text in the textbox on the alert window.
+accept() → to click on “OK” button on the alert window.
+dismiss() → to click on “Cancel” button on the alert window.
+
+
+
+		Alert x = driver.switchTo().alert();
+		x.accept();
+		x.dismiss();
+		x.getText();
+		x.sendKeys("abx");

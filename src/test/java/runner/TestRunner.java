@@ -9,11 +9,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin={"html:reports/cucumber-html-report", 
-				"json:reports/cucumber.json",
+		plugin={"json:reports/cucumber-report/cucumber.json", "html:reports/cucumber-report/cucumber.html",
 				"pretty"},
 		tags={"@Regression"},
-		features="src/test/java/features/", 
+		features="res/features",
 		glue={"stepDefination"},
 		monochrome=true,
 		strict = true

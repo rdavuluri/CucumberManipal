@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 21736667100,
+              "duration": 3403937000,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 17,
+        "line": 16,
         "name": "Calculate BMI",
         "description": "",
         "id": "bmi-calculations;calculate-bmi;;2",
         "after": [
           {
             "result": {
-              "duration": 11877707700,
+              "duration": 685451800,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4232135200,
+              "duration": 362265000,
               "status": "passed"
             },
             "line": 6,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 138133900,
+              "duration": 14524900,
               "status": "passed"
             },
             "line": 7,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 5385211300,
+              "duration": 2486543600,
               "status": "passed"
             },
             "line": 8,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 1943664500,
+              "duration": 6874300,
               "status": "passed"
             },
             "line": 9,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 2144502100,
+              "duration": 270068200,
               "status": "passed"
             },
             "line": 10,
@@ -113,7 +113,7 @@
           },
           {
             "result": {
-              "duration": 4265408900,
+              "duration": 2589819000,
               "status": "passed"
             },
             "line": 11,
@@ -125,571 +125,7 @@
           },
           {
             "result": {
-              "duration": 13968895100,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user get the result",
-            "match": {
-              "location": "BMIStepDef.user_get_the_result()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 10434547100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.doSetUp()"
-            }
-          }
-        ],
-        "line": 18,
-        "name": "Calculate BMI",
-        "description": "",
-        "id": "bmi-calculations;calculate-bmi;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 70156559000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3748707400,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Open Calculator url",
-            "match": {
-              "location": "BMIStepDef.open_Calculator_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 123676600,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "verify Calculator page",
-            "match": {
-              "location": "BMIStepDef.verify_Calculator_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 12091651400,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click on BMI Calculator link",
-            "match": {
-              "location": "BMIStepDef.user_click_on_BMI_Calculator_link()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 105627300,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify BMI Calculator page",
-            "match": {
-              "location": "BMIStepDef.verify_BMI_Calculator_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3230322800,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "enter \u002730\u0027, \u0027156\u0027 and \u002770\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "30",
-                  "offset": 7
-                },
-                {
-                  "val": "156",
-                  "offset": 13
-                },
-                {
-                  "val": "70",
-                  "offset": 23
-                }
-              ],
-              "location": "BMIStepDef.enter_and(String,String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1,
-              2
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3941038400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user click on Calculate button",
-            "match": {
-              "location": "BMIStepDef.user_click_on_Calculate_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29389723700,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user get the result",
-            "match": {
-              "location": "BMIStepDef.user_get_the_result()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 9439735600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.doSetUp()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "Calculate BMI",
-        "description": "",
-        "id": "bmi-calculations;calculate-bmi;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 39996819400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3991868100,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Open Calculator url",
-            "match": {
-              "location": "BMIStepDef.open_Calculator_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 158300800,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "verify Calculator page",
-            "match": {
-              "location": "BMIStepDef.verify_Calculator_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5482579100,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click on BMI Calculator link",
-            "match": {
-              "location": "BMIStepDef.user_click_on_BMI_Calculator_link()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 279119700,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify BMI Calculator page",
-            "match": {
-              "location": "BMIStepDef.verify_BMI_Calculator_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4879600700,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "enter \u002725\u0027, \u0027152\u0027 and \u002755\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "25",
-                  "offset": 7
-                },
-                {
-                  "val": "152",
-                  "offset": 13
-                },
-                {
-                  "val": "55",
-                  "offset": 23
-                }
-              ],
-              "location": "BMIStepDef.enter_and(String,String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1,
-              2
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4304796900,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user click on Calculate button",
-            "match": {
-              "location": "BMIStepDef.user_click_on_Calculate_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 17739717400,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user get the result",
-            "match": {
-              "location": "BMIStepDef.user_get_the_result()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 12993406000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.doSetUp()"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "Calculate BMI",
-        "description": "",
-        "id": "bmi-calculations;calculate-bmi;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 39137663800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 4175502800,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Open Calculator url",
-            "match": {
-              "location": "BMIStepDef.open_Calculator_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 44581000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "verify Calculator page",
-            "match": {
-              "location": "BMIStepDef.verify_Calculator_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5329685200,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click on BMI Calculator link",
-            "match": {
-              "location": "BMIStepDef.user_click_on_BMI_Calculator_link()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2723234700,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify BMI Calculator page",
-            "match": {
-              "location": "BMIStepDef.verify_BMI_Calculator_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3174931300,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "enter \u002720\u0027, \u0027160\u0027 and \u002745\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "20",
-                  "offset": 7
-                },
-                {
-                  "val": "160",
-                  "offset": 13
-                },
-                {
-                  "val": "45",
-                  "offset": 23
-                }
-              ],
-              "location": "BMIStepDef.enter_and(String,String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1,
-              2
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4104734400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user click on Calculate button",
-            "match": {
-              "location": "BMIStepDef.user_click_on_Calculate_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 37550134000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user get the result",
-            "match": {
-              "location": "BMIStepDef.user_get_the_result()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 11234983100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.doSetUp()"
-            }
-          }
-        ],
-        "line": 21,
-        "name": "Calculate BMI",
-        "description": "",
-        "id": "bmi-calculations;calculate-bmi;;6",
-        "after": [
-          {
-            "result": {
-              "duration": 57313728100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 4577401600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Open Calculator url",
-            "match": {
-              "location": "BMIStepDef.open_Calculator_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 216719100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "verify Calculator page",
-            "match": {
-              "location": "BMIStepDef.verify_Calculator_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5963680500,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click on BMI Calculator link",
-            "match": {
-              "location": "BMIStepDef.user_click_on_BMI_Calculator_link()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 428539100,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify BMI Calculator page",
-            "match": {
-              "location": "BMIStepDef.verify_BMI_Calculator_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 25582644100,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "enter \u002735\u0027, \u0027160\u0027 and \u002770\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "35",
-                  "offset": 7
-                },
-                {
-                  "val": "160",
-                  "offset": 13
-                },
-                {
-                  "val": "70",
-                  "offset": 23
-                }
-              ],
-              "location": "BMIStepDef.enter_and(String,String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1,
-              2
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4138411700,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user click on Calculate button",
-            "match": {
-              "location": "BMIStepDef.user_click_on_Calculate_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 22992077700,
+              "duration": 30013600,
               "status": "passed"
             },
             "line": 12,

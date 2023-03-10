@@ -1,7 +1,6 @@
 package stepDefination;
 
 
-import org.hamcrest.Matcher;
 
 import pageObjects.BMIPage;
 import pageObjects.CalculatorPage;
@@ -18,12 +17,12 @@ public class BMIStepDef extends Setup{
 	BMIPage bpage = new BMIPage();
 	
 	@Given("^Open Calculator url$")
-	public void open_Calculator_url() throws Throwable {
+	public void open_Calculator_url() {
 		cpage.openUrl();	    
 	}
 
 	@Then("^verify Calculator page$")
-	public void verify_Calculator_page() throws Throwable {
+	public void verify_Calculator_page() {
 	  assertThat(cpage.getCalculatorPageTitle(), containsString("Calculator.net: Free Online Calculators - Math, Fitness, Finance, Science"));
 	}	
 
@@ -33,13 +32,13 @@ public class BMIStepDef extends Setup{
 	}
 
 	@Then("^verify BMI Calculator page$")
-	public void verify_BMI_Calculator_page() throws Throwable {
+	public void verify_BMI_Calculator_page() {
 		assertThat(bpage.getBMIPageTitle(), containsString("BMI Calculator"));
 	    
 	}
 
 	@When("^enter '(.*)', '(.*)' and '(.*)'$")
-	public void enter_and(String arg1, String arg2, String arg3) throws Throwable {
+	public void enter_and(String arg1, String arg2, String arg3) {
 	   bpage.setAge(arg1);
 	   bpage.setHeight(arg2);
 	   bpage.setWeight(arg3); 
@@ -51,13 +50,18 @@ public class BMIStepDef extends Setup{
 	}
 
 	@When("^user get the result$")
-	public void user_get_the_result() throws Throwable {
+	public void user_get_the_result() {
 	  bpage.showBMIIndex();
 	}
 	
 	@When("^Close the browser$")
-	public void close_the_browser() throws Throwable{
+	public void close_the_browser() {
 		driver.quit();
 	}
-
+	
+	@Then("^user verify the result$")
+	public void user_verify_the_result() throws Throwable {
+		 bpage.showBMIIndex();
+	}
+	
 }

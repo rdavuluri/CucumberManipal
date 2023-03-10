@@ -1,11 +1,9 @@
 package stepDefination;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import utilities.Setup;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.openqa.selenium.WebDriver;
+import utilities.Setup;
 
 public class Hooks {
 	
@@ -23,11 +21,11 @@ public class Hooks {
 	
 	
 	@After
-	public void tearDown() throws Exception {
+	public void tearDown() {
 		driver.quit();
 	}
 	
-	public void setSetUp(Setup setup) throws Exception {
+	public void setSetUp(Setup setup) {
 		this.setup = setup;
 	}
 	
